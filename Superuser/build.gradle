@@ -47,13 +47,13 @@ android {
         }
     }
 
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         File f = new File("packageName")
         minSdkVersion 14
-        targetSdkVersion 22
+        targetSdkVersion 25
         if(f.exists())
             applicationId f.text
         signingConfig signingConfigs.release
