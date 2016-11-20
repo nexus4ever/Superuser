@@ -318,11 +318,6 @@ public class MultitaskSuRequestActivity extends Activity {
                             requestReady();
                         }
                     });
-
-                    if ("com.koushikdutta.superuser".equals(getPackageName())) {
-                        if (!SuHelper.CURRENT_VERSION.equals(payload.getAsString("binary.version")))
-                            SuCheckerReceiver.doNotification(MultitaskSuRequestActivity.this);
-                    }
                 }
                 catch (Exception ex) {
                     Log.i(LOGTAG, ex.getMessage(), ex);
